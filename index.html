@@ -1,0 +1,353 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+<!-- Images source: -->
+<!-- jule.jpg taken from https://www.freepik.com/premium-vector/cartoon-successful-hairdresser_3951066.htm -->
+<!-- Erwind.jpb https://www.kijiji.ca/v-construction-trades-jobs/winnipeg/bicycle-mechanic/1499188319 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>Colour Me Crazy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+    <br>
+    <!-- Bootstrap has components for alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
+    <!-- These can be useful for making sure someone reads something before continuing -->
+    <div class="container">
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong style="font-size:30px;">Important Notice</strong>
+            <p>Due to the situation regarding <strong>COVID-19</strong> we reget to inform you that
+                our in store services are closed until futher notice. Alternatively, we provide consulting and one on one virtual hair styling services. To book an appointment call us at 647-807-7918.<p>
+        </div>
+    </div>
+
+    <div class="container-md p-3 my-3 border bg-primary text-white">
+        <h1 class="display-4">Welcome to Colour Me Crazy</h1>
+        <img src="./images/Untitled.png">
+        <h3>For all your haircutting needs!</h3>
+        <p>17 Moonshine Street, Toronto ON M1R 0E9</p>
+    </div>
+
+    <div class="container-md p-3 my-3 border bg-light">
+
+        <div class="text-info">
+            <h3>Our Expertise</h3>
+        </div>
+
+        <h5>Styling | Grooming | Colouring</h5>
+        <p>✰ We can <mark>style</mark> your hair to perfection! </p>
+        <p>✰ What is good hair without good <mark>grooming?</mark></p>
+        <p>✰ Add some <mark>colour</mark> to your day!</p>
+    </div>
+
+     <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
+    <!-- Might be (or not) useful to show some information to the user -->
+    <div class="container">
+        <div class="text-info">
+            <h2>Service description</h2>
+        </div>
+        <p>Here is a list of services that we offer:</p>            
+        <table class="table table-primary table-hover">
+            <thead>
+            <tr>
+                <th>Service</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Haircut</td>
+                <td>Premium haircut for all ages and genders!</td>
+                <td>$15</td>
+            </tr>
+            <tr>
+                <td>Drying</td>
+                <td>Get the best curls you ever seen!</td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>Colouring</td>
+                <td>Pick from a variety of colours and dying options.</td>
+                <td>$25</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container p-3">
+        <div class="text-info">
+            <h2>Our Staff</h2>
+        </div>
+        <div class="card-columns">
+            <div class="card bg-primary" style="width:200px">
+                <img class="card-img-top" src="./images/Olivia.jpg" alt="Card image" style="width:100% height: 200px">
+                <div class="card-body">
+                    <h4 class="card-title">Olivia</h4>
+                    <p class="card-text">Head Consultant</p>
+                    <!-- collapsible part -->
+                    <a href="#profile1" class="btn btn-dark" data-toggle="collapse">About Olivia</a>
+                    <div id="profile1" class="collapse p-2">
+                        <p>20 years experience in the field. Graduated from the top hairstyling program in Canada. Oversees all operations.</p>
+                    </div>
+                </div>
+            </div>    
+            <div class="card bg-primary" style="width:200px">
+                <img class="card-img-top" src="./images/Wendel.jpg" alt="Card image" style="width:100% height: 200px">
+                <div class="card-body">
+                    <h4 class="card-title">Wendel</h4>
+                    <p class="card-text">Men's Hair Stylist</p>
+                    <!-- collapsible part -->
+                    <a href="#profile2" class="btn btn-dark" data-toggle="collapse">About Wendel</a>
+                    <div id="profile2" class="collapse p-2">
+                        <p>5 years in the field. Knows the latest trends in the industry. Won multiple awards in hairstyling. One of the brightest up and coming hairstylers in the country. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-primary" style="width:200px">
+                <img class="card-img-top" src="./images/Ashley.jpg" alt="Card image" style="width:100% height: 200px">
+                <div class="card-body">
+                    <h4 class="card-title">Ashley</h4>
+                    <p class="card-text">Women's Hair Stylist</p>
+                    <!-- collapsible part -->
+                    <a href="#profile3" class="btn btn-dark" data-toggle="collapse">About Ashley</a>
+                    <div id="profile3" class="collapse p-2">
+                        <p>10 years in the field. Experience working with many celebrities for movie sets. Expertise lies in colouring. Won multiple prestigious competitions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="text-info">
+            <h2>Hair Styles</h2>
+        </div>
+
+        <div class="card-columns">
+        
+        <div class="card bg-primary" style="width:200px">
+            <img class="card-img-top" src="./images/quiff.jpg" alt="Card image" style="width:100% height:200px">
+            <div class="card-body">
+                <h4 class="card-title">Quiff</h4>
+                <!-- collapsible part -->
+                </div>
+            </div> 
+        
+        <div class="card bg-primary" style="width:200px">
+            <img class="card-img-top" src="./images/fauxhawk.jpg" alt="Card image" style="width:100% height:200px">
+            <div class="card-body">
+                <h4 class="card-title">Faux Hawk</h4>
+                <!-- collapsible part -->
+                </div>
+            </div>
+    
+        <div class="card bg-primary" style="width:200px">
+                <img class="card-img-top" src="./images/undercut.jpg" alt="Card image" style="width:100% height:200px">
+                <div class="card-body">
+                    <h4 class="card-title">Undercut</h4>
+                    <!-- collapsible part -->
+                    </div>
+                </div>
+            
+        <div class="card bg-primary" style="width:200px">
+            <img class="card-img-top" src="./images/blonde.jpg" alt="Card image" style="width:100% height:200px">
+            <div class="card-body">
+                <h4 class="card-title">Blonde Hair</h4>
+                <!-- collapsible part -->
+                </div>
+            </div>
+            
+        <div class="card bg-primary" style="width:200px">
+            <img class="card-img-top" src="./images/brown.jpg" alt="Card image" style="width:100% height:200px">
+            <div class="card-body">
+                <h4 class="card-title">Brown Hair</h4>
+                <!-- collapsible part -->
+                </div>
+            </div>
+
+
+         <div class="card bg-primary" style="width:200px">
+            <img class="card-img-top" src="./images/red.jpg" alt="Card image" style="width:100% height:200px">
+            <div class="card-body">
+                <h4 class="card-title">Red Hair</h4>
+                <!-- collapsible part -->
+                </div>
+            </div>   
+
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container-md p-3 my-3 border bg-light">
+        <div class="text-info">
+            <h3>Our Information</h3>
+        </div>
+        <h5><b>✰ Location ✰</b></h5>
+        <p>17 Moonshine Street, Toronto ON M1R 0E9 </p>
+        <br>
+        <h5><b>✰ Email Address ✰</b></h5>
+        <p>yourstruly@colourmecrazy.ca </p>
+        <br>
+        <h5><b>✰ Phone Number ✰</b></h5> 
+        <p>647-807-7918 </p>
+        <br>
+        <h5><b>✰ Business Hours ✰</b></h5>
+        <p>Monday to Saturday [10 AM to 8 PM]</p>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <div class="text-info">
+            <h3>Book an appointment!</h3>
+        </div>
+
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseService">Choose a service</a>
+                </div>
+                <div id="collapseService" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Please specify which of our services you require.</p>
+                            <label>
+                                <input type="radio" name="service" value="haircut">
+                                <img src="./images/haircut.png" style="height: 150px; width: 150px;">
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="service" value="drying">
+                                <img src="./images/hairdry.jpg" style="height: 150px; width: 150px;">
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="service" value="colouring">
+                                <img src="./images/colouring.jpg" style="height: 150px; width: 150px;">
+                            </label>
+                    </div>
+                </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose an appointment time</a>
+                </div>
+                
+                <div id="collapseDate" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Specify when you would like your appointment.</p>
+                        <!-- Bootstrap has various input components. Some examples are given here: -->
+                        <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+                        <div class="form-group row">
+                            <label for="dateTimeInput" class="col-2 col-form-label">MM/DD/YYYY hh:mm</label>
+                            <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                </div>
+
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Please enter your information below.</p>
+                        Full Name: <input type="text" id="firstName" name="firstName" placeholder="First Name"> <input type="text" id="lastName" name="lastName" placeholder="Last Name"><br><br>
+                        Email Address: <input type="text" id="email" name="email" placeholder="tow.mater@email.com"><br><br>
+                        Phone Number: <input type="tel" id="pnumber" name="pnumber" placeholder="(xxx) xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+                        <button type="button" class="btn btn-info">Book appointment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <div class="text-info">
+            <h3>Satisfaction Survey</h3>
+        </div>
+        <p>How was your experience on our site today? Please let us know by completing our survey.</p>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mySurvey">Open Survey</button>
+          
+        <!-- Modal -->
+        <div class="modal fade" id="mySurvey" role="dialog">
+            <div class="modal-dialog">  
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h5>How did you hear about us? (select all that apply)</h5>
+                        <form>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value=""> Through family / friends</label>
+                              </div>
+                              <div class="checkbox">
+                                <label><input type="checkbox" value=""> Newspaper Advertisement</label>
+                              </div>
+                              <div class="checkbox">
+                                <label><input type="checkbox" value=""> Online Advertisement</label>
+                              </div>
+                              <div class="checkbox">
+                                <label><input type="checkbox" value=""> Other</label>
+                              </div>
+                            </form>
+                    </div>
+                    <br>
+                    <div class="container">
+                        <h5>Did you enjoy your expereince?</h5>
+                        <form>
+                          <div class="checkbox">
+                            <label><input type="radio" value="">Yes</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="radio" value="">No</label>
+                          </div>
+                        </form>
+                    </div>
+                    <br>
+                    <div class="container">
+                        <h5>Tell us why you did or did not enjoy your experience:</h5>
+                        <textarea name="comment" rows="10" cols="45" style="height: 80px; resize: none"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>     
+        </div>
+        </div>    
+    </div>
+
+    <br>
+
+    <P>Website Designed by Abhishek Saravanabavan (Student Number: 300062167)</P>
+</div>
+
+</body>
+</html>
