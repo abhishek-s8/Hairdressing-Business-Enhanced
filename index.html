@@ -1,12 +1,8 @@
 <!-- This file contains many elements adapted from the online tutoral -->
 <!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
 
-<!-- Images source: -->
-<!-- jule.jpg taken from https://www.freepik.com/premium-vector/cartoon-successful-hairdresser_3951066.htm -->
-<!-- Erwind.jpb https://www.kijiji.ca/v-construction-trades-jobs/winnipeg/bicycle-mechanic/1499188319 -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="home">
 
 <!-- The head should contain an appropriate title for your site -->
 <head>
@@ -18,7 +14,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
+    <!-- which is built on top of JQuery and offers additional possibilities -->
+    <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>   
 
     <!-- Your own additional style sheet -->
     <link href="styles/style.css" rel="stylesheet" type="text/css">
@@ -26,9 +29,84 @@
 
 
 <body>
+    <!-- Bootstrap contains a grid system you can explore https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp -->
+    <!-- It can be useful for placement of information -->
+    <div id="header" class="row p-2 d-flex text-center bg-primary text-white">
+        <div class="col-sm row justify-content-center align-self-center">
+            <a href="#home">
+                <div class="row-sm">
+                    <img src="./icons/barber.png" style="width:50px;height:50px;">
+                </div>
+                <div class="row-sm">
+                    Colour Me Crazy
+                </div>
+            </a>
+        </div>
+        <div class="col-sm justify-content-center align-self-center">
+            <a href="#about">
+                <div class="row-sm">
+                    <img src="./icons/about.png" style="width:50px;height:50px;">
+                </div>
+                <div class="row-sm">
+                    About Us
+                </div>
+            </a>
+        </div>
+        <div class="col-sm justify-content-center align-self-center">
+            <a href="#services">
+                <div class="row-sm">
+                    <img src="./icons/services.png" style="width:50px;height:50px;">
+                </div>
+                <div class="row-sm">
+                    Services
+                </div>
+            </a>
+        </div>
+        <div class="col-sm justify-content-center align-self-center">
+            <a href="#staff">
+                <div class="row-sm">
+                    <img src="./icons/staff.png" style="width:50px;height:50px;">
+                </div>
+                <div class="row-sm">
+                    Staff
+                </div>
+            </a>
+        </div>
+        <div class="col-sm justify-content-center align-self-center">
+            <a href="#styles">
+                <div class="row-sm">
+                    <img src="./icons/hair.png" style="width:50px;height:50px;">
+                </div>
+                <div class="row-sm">
+                    Styles
+                </div>
+            </a>
+        </div>
+        <div class="col-sm justify-content-center align-self-center">
+            <a href="#book">
+                <div class="row-sm">
+                    <img src="./icons/schedule.png" style="width:50px;height:50px;">
+                </div>
+                <div class="row-sm">
+                    Book Appointment
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
+    <!-- Should show the name of your company with an image or logo -->
+    <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
+    <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
+    <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
+    <div class="container-md p-3 my-0 border bg-primary text-white">
+        <h1 class="display-4">Welcome to Colour Me Crazy</h1>
+        <h3>For all your hairstyling needs!</h3>
+        <img src="./images/main.jpg"> 
+    </div>
+
     <br>
-    <!-- Bootstrap has components for alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
-    <!-- These can be useful for making sure someone reads something before continuing -->
+
     <div class="container">
         <div class="alert alert-danger alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -38,14 +116,16 @@
         </div>
     </div>
 
-    <div class="container-md p-3 my-3 border bg-primary text-white">
-        <h1 class="display-4">Welcome to Colour Me Crazy</h1>
-        <img src="./images/Untitled.png">
-        <h3>For all your haircutting needs!</h3>
-        <p>17 Moonshine Street, Toronto ON M1R 0E9</p>
+    <div id= "about" class="paddingDiv"></div>
+
+    <div class="container p-1">
+        <div class="d-flex pb-2">
+        <div class="text-info">
+            <h1><img src="./icons/about.png" style="width:50px;height:50px;">About Us</h1>
+        </div>
     </div>
 
-    <div class="container-md p-3 my-3 border bg-light">
+    <div class="container-md p-3 my-0 border bg-light">
 
         <div class="text-info">
             <h3>Our Expertise</h3>
@@ -57,13 +137,36 @@
         <p>✰ Add some <mark>colour</mark> to your day!</p>
     </div>
 
+    <div class="container-md p-3 my-3 border bg-light">
+        <div class="text-info">
+            <h3>Our Information</h3>
+        </div>
+        <h5><b>✰ Location ✰</b></h5>
+        <p>17 Moonshine Street, Toronto ON M1R 0E9 </p>
+        <br>
+        <h5><b>✰ Email Address ✰</b></h5>
+        <p>yourstruly@colourmecrazy.ca </p>
+        <br>
+        <h5><b>✰ Phone Number ✰</b></h5> 
+        <p>647-807-7918 </p>
+        <br>
+        <h5><b>✰ Business Hours ✰</b></h5>
+        <p>Monday to Saturday [10 AM to 8 PM]</p>
+    </div>
+
      <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
     <!-- Might be (or not) useful to show some information to the user -->
-    <div class="container">
+    <div id= "services" class="paddingDiv"></div>
+
+    <div class="container p-1">
+        <div class="d-flex pb-0">
         <div class="text-info">
-            <h2>Service description</h2>
+            <h1><img src="./icons/services.png" style="width:50px;height:50px;">Services</h1>
         </div>
-        <p>Here is a list of services that we offer:</p>            
+    </div>
+
+    <div class="container p-1">
+        <p>Here are a list of services that we offer:</p>            
         <table class="table table-primary table-hover">
             <thead>
             <tr>
@@ -79,6 +182,11 @@
                 <td>$15</td>
             </tr>
             <tr>
+                <td>Beard Trim</td>
+                <td>Variety of styles that will complement your haircut.</td>
+                <td>$10</td>
+            </tr>
+            <tr>
                 <td>Drying</td>
                 <td>Get the best curls you ever seen!</td>
                 <td>$10</td>
@@ -92,10 +200,17 @@
         </table>
     </div>
 
-    <div class="container p-3">
+
+    <div id= "staff" class="paddingDiv"></div>
+
+    <div class="container p-1">
+        <div class="d-flex pb-1">
         <div class="text-info">
-            <h2>Our Staff</h2>
+            <h1><img src="./icons/staff.png" style="width:50px;height:50px;">Staff</h1>
         </div>
+    </div>
+
+    <div class="container p-1">
         <div class="card-columns">
             <div class="card bg-primary" style="width:200px">
                 <img class="card-img-top" src="./images/Olivia.jpg" alt="Card image" style="width:100% height: 200px">
@@ -137,11 +252,17 @@
     </div>
 
 
-    <div class="container">
-        <div class="text-info">
-            <h2>Hair Styles</h2>
-        </div>
 
+    <div id= "styles" class="paddingDiv"></div>
+
+    <div class="container p-1">
+        <div class="d-flex pb-1">
+        <div class="text-info">
+            <h1><img src="./icons/hair.png" style="width:50px;height:50px;">Styles</h1>
+        </div>
+    </div>
+
+    <div class="container p-1">
         <div class="card-columns">
         
         <div class="card bg-primary" style="width:200px">
@@ -196,99 +317,192 @@
         </div>
     </div>
 
-    <br>
+    <div id= "book" class="paddingDiv"></div>
 
-    <div class="container-md p-3 my-3 border bg-light">
+    <div class="container p-1">
+        <div class="d-flex pb-1">
         <div class="text-info">
-            <h3>Our Information</h3>
+            <h1><img src="./icons/schedule.png" style="width:50px;height:50px;">Book Appointment</h1>
         </div>
-        <h5><b>✰ Location ✰</b></h5>
-        <p>17 Moonshine Street, Toronto ON M1R 0E9 </p>
-        <br>
-        <h5><b>✰ Email Address ✰</b></h5>
-        <p>yourstruly@colourmecrazy.ca </p>
-        <br>
-        <h5><b>✰ Phone Number ✰</b></h5> 
-        <p>647-807-7918 </p>
-        <br>
-        <h5><b>✰ Business Hours ✰</b></h5>
-        <p>Monday to Saturday [10 AM to 8 PM]</p>
     </div>
 
-    <br>
-
-    <div class="container">
-        <div class="text-info">
-            <h3>Book an appointment!</h3>
-        </div>
-
+    <div id="book" class="container p-1">
         <div id="accordion">
             <div class="card">
-                <div class="card-header">
-                    <a class="card-link" data-toggle="collapse" href="#collapseService">Choose a service</a>
+                <div class="card-header" data-toggle="collapse" href="#collapseService">
+                    <a class="card-link text-dark">
+                        <img src="./icons/service.png" style="width:40px;height:40px;">
+                        Choose a Service
+                    </a>
                 </div>
                 <div id="collapseService" class="collapse show" data-parent="#accordion">
                     <div class="card-body">
-                        <p>Please specify which of our services you require.</p>
-                            <label>
-                                <input type="radio" name="service" value="haircut">
-                                <img src="./images/haircut.png" style="height: 150px; width: 150px;">
+                        <div>
+                            <label class="checkbox-inline">
+                                <input type="checkbox">
+                                Haircut
                             </label>
-                            <br>
-                            <label>
-                                <input type="radio" name="service" value="drying">
-                                <img src="./images/hairdry.jpg" style="height: 150px; width: 150px;">
+                        </div>
+                        <div>
+                            <label class="checkbox-inline">
+                                <input type="checkbox">
+                                Beard Trim
                             </label>
-                            <br>
-                            <label>
-                                <input type="radio" name="service" value="colouring">
-                                <img src="./images/colouring.jpg" style="height: 150px; width: 150px;">
+                        </div>
+                        <div>
+                            <label class="checkbox-inline">
+                                <input type="checkbox">
+                                Drying
                             </label>
+                        </div>
+                        <div>
+                            <label class="checkbox-inline">
+                                <input type="checkbox">
+                                Colouring
+                            </label>
+                        </div>
                     </div>
                 </div>
+            </div>
             <div class="card">
-                <div class="card-header">
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose an appointment time</a>
+                <div class="card-header" data-toggle="collapse" href="#collapseProfessional">
+                    <a class="card-link text-dark">
+                        <img src="./icons/professional.png" style="width:40px;height:40px;">
+                        Choose your Professional
+                    </a>
                 </div>
-                
+                <div id="collapseProfessional" class="collapse" data-parent="#accordion">
+                    <div class="card-columns">
+
+                        <div class="card bg-primary" style="width:200px">
+                            <img class="card-img-top" src="./images/Olivia.jpg" alt="Card image" style="width:100% height: 200px">
+                            <div class="card-body">
+                                <h4 class="card-title">Olivia</h4>
+                                <p>Can do all services. Expertise in Colouring.</p>
+                                <input id = "olivia" class="ProfessionalRadio" type="radio" name="Professional"/>
+                            </div>
+                        </div> 
+                        <div class="card bg-primary" style="width:200px">
+                            <img class="card-img-top" src="./images/Wendel.jpg" alt="Card image" style="width:100% height: 200px">
+                            <div class="card-body">
+                                <h4 class="card-title">Wendel</h4>
+                                <p>Can do all services. Expertise in Beard Trimming.</p>
+                                <input id = "wendel" class="ProfessionalRadio" type="radio" name="Professional"/>
+                            </div>
+                        </div>
+                        <div class="card bg-primary" style="width:200px">
+                            <img class="card-img-top" src="./images/Ashley.jpg" alt="Card image" style="width:100% height: 200px">
+                            <div class="card-body">
+                                <h4 class="card-title">Ashley</h4>
+                                <p>Can do all services. Expertise in Drying.</p>
+                                <input id = "ashley" class="ProfessionalRadio" type="radio" name="Professional"/>
+                            </div>
+                        </div>                                               
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#collapseDate">
+                    <a class="collapsed card-link text-dark">
+                        <img src="./icons/date.png" style="width:40px;height:40px;">
+                        Choose a Date
+                    </a>
+                </div>
                 <div id="collapseDate" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <p>Specify when you would like your appointment.</p>
+                        <p>When do you want your appoinment?</p>
                         <!-- Bootstrap has various input components. Some examples are given here: -->
                         <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
                         <div class="form-group row">
-                            <label for="dateTimeInput" class="col-2 col-form-label">MM/DD/YYYY hh:mm</label>
                             <div class="col-10">
-                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                                <input type="text" id="dateInput">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <div class="card-header">
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                <div class="card-header" data-toggle="collapse" href="#collapseClientInfo">
+                    <a class="collapsed card-link text-dark">
+                        <img src="./icons/info.png" style="width:40px;height:40px;">
+                        Your Info
+                    </a>
                 </div>
-
                 <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <p>Please enter your information below.</p>
-                        Full Name: <input type="text" id="firstName" name="firstName" placeholder="First Name"> <input type="text" id="lastName" name="lastName" placeholder="Last Name"><br><br>
-                        Email Address: <input type="text" id="email" name="email" placeholder="tow.mater@email.com"><br><br>
-                        Phone Number: <input type="tel" id="pnumber" name="pnumber" placeholder="(xxx) xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
-                        <button type="button" class="btn btn-info">Book appointment</button>
+                        <form>
+                            <div class="m-3">
+                                <input
+                                    id = "name"
+                                    class = "form-control-lg form-control"
+                                    placeholder = "Name"/>
+                            </div>
+                            <div class="m-3">
+                                <input
+                                    id = "email"
+                                    class = "form-control-lg form-control"
+                                    placeholder = "Email"/>
+                            </div>
+                            <div class="m-3">
+                                <input
+                                    id = "phone"
+                                    class = "form-control-lg form-control"
+                                    placeholder = "Phone Number"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a class="collapsed card-link text-dark" data-toggle="collapse" href="#collapsePaymentInfo">
+                <div class="card-header" data-toggle="tooltip" data-placement="bottom" title="Your payment is essential to prevent last minute cancellation.">
+                    <img src="./icons/card.png" style="width:40px;height:40px;">
+                    Payment Info
+                </div>
+                </a>
+                <div id="collapsePaymentInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <form>
+                            <div class="m-3">
+                                <input
+                                    id = "creditCard"
+                                    class = "form-control-lg form-control"
+                                    placeholder = "Credit Card Number"/>
+                            </div>
+                            <div class="m-3">
+                                <input
+                                    id = "expiredDate"
+                                    class = "form-control-lg form-control"
+                                    placeholder = "Expired Date"/>
+                            </div>
+                            <div class="m-3">
+                                <input
+                                    id = "securityCode"
+                                    class = "form-control-lg form-control"
+                                    placeholder = "Security Code"/>
+                            </div>
+                            <div class="m-3">
+                                <button type="button" class="btn btn-info">Book</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src = "scripts/main.js"></script>
 
-    <br>
+    <div id= "survey" class="paddingDiv"></div>
+
+    <div id= "survey"></div>
+    <div class="container p-1">
+        <div class="d-flex pb-1">
+        <div class="text-info">
+            <h1><img src="./icons/survey.png" style="width:50px;height:50px;">Satisfaction Survey</h1>
+        </div>
+    </div>
 
     <div class="container">
-        <div class="text-info">
-            <h3>Satisfaction Survey</h3>
-        </div>
         <p>How was your experience on our site today? Please let us know by completing our survey.</p>
         <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mySurvey">Open Survey</button>
           
@@ -344,10 +558,8 @@
         </div>    
     </div>
 
-    <br>
-
-    <P>Website Designed by Abhishek Saravanabavan (Student Number: 300062167)</P>
-</div>
-
+    <div id="footer">
+  		<div id="footer-credit">Website Designed by Abhishek Saravanabavan (Student Number: 300062167)</div>
+	</div>
 </body>
 </html>

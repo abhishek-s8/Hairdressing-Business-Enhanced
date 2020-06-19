@@ -1,9 +1,82 @@
-
 /* Style sheet
    color picker www.w3schools.com/colors/colors_picker.asp
 */
 
 /* Bootstrap default font-family is Helvetica Neue */
+html{
+	font-family: "Trebuchet MS", sans-serif;
+	margin:0;
+	padding:0;
+}
 h1,h2,h3,h4,h5,p {
   font-family: "Trebuchet MS", sans-serif;  
+}
+body{
+	padding-top: 150px;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+a:hover{
+	color: lightblue;
+	text-decoration: none;
+	opacity: 0.9
+}
+input:hover{
+	background-color: lightblue;
+}
+.paddingDiv{
+	padding-top: 80px;
+}
+.ui-tooltip {
+	padding: 8px;
+	position: absolute;
+	z-index: 9999;
+	max-width: 300px;
+	opacity: 1;
+	background: #007bff;
+	color: white;
+}
+body .ui-tooltip {
+	border-width: 0px;
+}
+.card-header{
+	cursor: pointer;
+}
+.ProfessionalRadio{
+	border: 0px;
+    width: 100%;
+    height: 1.3em;
+}
+.form-control:focus {
+  border-color: #000000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6);
+}
+.mechanicRadio{
+	display: flex;
+	align-items: center;
+	width: 25px;
+	height: 25px;
+	margin: auto;
+	margin-top: 25px;
+}
+.top{
+	position: fixed;
+	top: 0;
+}
+#header{
+	position: fixed;
+  	top: 0;
+  	width: 102%;
+  	z-index: 2;
+}
+#footer {	
+  padding-top: 35px;
+  bottom: 0px;
+  height: 0px;
+}
+
+#footer-credit {
+  font-size: 17px;
 }
